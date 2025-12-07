@@ -16,7 +16,7 @@ options = HandLandmarkerOptions(
 
 with HandLandmarker.create_from_options(options) as landmarker:
 
-    image = mp.Image.create_from_file("A-J ASL JPEG Resized/100418777_H_1.jpg")
+    image = mp.Image.create_from_file("100418777_H_1.jpg")
     result = landmarker.detect(image)
 
     annotated_image = image.numpy_view().copy()
